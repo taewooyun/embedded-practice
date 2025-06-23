@@ -1,4 +1,4 @@
-# Embedded System Study Roadmap
+# Embedded System Practice
 
 이 저장소는 임베디드 시스템의 전체 생태계를 구조화하여,  
 각 계층(엣지 디바이스 → 데이터 브릿지 → 운용/제어 계층)에 해당하는 프로젝트를 직접 실습하고 기록한 학습용 레포입니다.  
