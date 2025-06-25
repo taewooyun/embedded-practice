@@ -1,0 +1,28 @@
+# Build artifacts
+*.o
+*.elf
+*.bin
+*.map
+*.hex
+*.log
+
+# Build directories
+build/
+out/
+
+# Editor backup files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# macOS
+.DS_Store
+
+# VSCode workspace settings
+.vscode/
+
+# QEMU runtime logs (if any)
+*.trace
+*.img
+*.dmp
