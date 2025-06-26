@@ -1,27 +1,34 @@
 # STM32CubeIDE Generated Files
-.vscode/
-Debug/
-Release/
-.settings/
-.cproject
-.project
-*.launch
+**/.vscode/
+**/Debug/
+**/Release/
+**/.settings/
+**/.cproject
+**/.project
+**/*.launch
 
 # Build Artifacts
-*.bin
-*.elf
-*.hex
-*.map
-*.o
-*.d
-*.list
-*.log
+**/*.bin
+**/*.elf
+**/*.hex
+**/*.map
+**/*.o
+**/*.d
+**/*.list
+**/*.log
+**/*.tmp
 
 # Temporary / System Files
-*.swp
-*~
+**/*.swp
+**/*~
+**/*.bak
+**/*.orig
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+.AppleDouble
+.LSOverride
 
 # CubeMX generated backup
-*.ioc.backup
+**/*.ioc.backup
