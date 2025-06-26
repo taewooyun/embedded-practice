@@ -6,6 +6,7 @@
 **/.cproject
 **/.project
 **/*.launch
+**/.metadata/
 
 # Build Artifacts
 **/*.bin
