@@ -1,0 +1,50 @@
+# =====================================
+# STM32CubeIDE
+# =====================================
+Debug/
+Release/
+build/
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.o
+*.d
+*.su
+.settings/
+.metadata/
+*.launch
+*.mxproject
+
+# =====================================
+# Keil MDK-ARM / uVision5
+# =====================================
+Objects/
+Listings/
+*.axf
+*.htm
+*.bak
+*.build_log.htm
+*.crf
+*.dep
+*.iex
+*.uvopt
+*.uvoptx
+*.uvguix
+*.uvguix.*
+*.uvproj.bak
+RTE/
+
+# Debug
+*.dbg
+*.ini
+
+# =====================================
+# Common
+# =====================================
+.DS_Store
+Thumbs.db
+*~
+*.tmp
+*.swp
