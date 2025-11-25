@@ -6,78 +6,78 @@
 Debug/
 Release/
 build/
-*.o
 *.elf
+*.axf
+*.bin
+*.hex
 *.map
 *.lst
-*.axf
+*.o
+*.d
+*.su
 
-# Cube auto-generated binaries
-*.hex
-*.bin
-
-# IDE settings (사용자 환경)
+# IDE settings
 .settings/
 .metadata/
 *.launch
+*.mxproject
 
-# Core auto-generated (빌드 캐시)
+# Cube auto-generated core stubs
 */Core/Inc/syscalls.c
 */Core/Src/syscalls.c
 */Core/Inc/sysmem.c
 */Core/Src/sysmem.c
 
 ###############################################################################
-# Keil µVision (MDK / uVision)
+# Keil MDK-ARM / uVision5
 ###############################################################################
 
 # Build output
-*.axf
-*.elf
-*.hex
-*.bin
-*.map
-*.d
-
-# Listing, log
-*.crf
-*.htm
-*.lnp
-*.lst
-*.exp
-*.plg
-
-# Temporary
-*.uvguix.*
-*.uvgui.*
-*.uvoptx
-*.sct
-*.dep
-
-# uVision build folders
 Objects/
 Listings/
 RTE/
 
+*.axf
+*.crf
+*.dep
+*.iex
+*.htm
+*.lnp
+*.plg
+*.exp
+*.uvopt
+*.uvoptx
+
+# temporary UI configs
+*.uvgui.*
+*.uvguix
+*.uvguix.*
+
+# project backup
+*.uvproj.bak
+*.bak
+*.build_log.htm
+
 ###############################################################################
-# General C / C++ / IDE
+# General C / C++
 ###############################################################################
-*.swp
-*.swo
 *.log
 *.tmp
+*.swp
+*.swo
 *.cache/
 
-# OS files
-.DS_Store
-Thumbs.db
-
 ###############################################################################
-# Qt/VSCode (STM32 GUI/Controller용)
+# IDE / Editor
 ###############################################################################
 .vscode/
+.idea/
 *.user
 *.pro.user
+
+###############################################################################
+# Qt (desktop gui)
+###############################################################################
 *.qmlc
 *.jsc
 
@@ -89,9 +89,19 @@ __pycache__/
 *.pyo
 
 ###############################################################################
-# Other development
+# Operating System
 ###############################################################################
+.DS_Store
+Thumbs.db
+*~
 
-# If you use STM32CubeMX generated code except config UI
-# *.ioc 은 반드시 버전관리 유지 (프로젝트 설정 중요)
-# *.uvprojx *.uvpx 도 버전관리 유지 (프로젝트 파일)
+###############################################################################
+# IMPORTANT - Do NOT ignore
+###############################################################################
+# These must remain under version control:
+# - STM32CubeMX config (.ioc)
+# - Keil project files (.uvprojx / .uvproj)
+# - linker scripts (.ld / .sct)
+# - your own source code under Core/Src and Core/Inc
+# - Drivers/CMSIS (core)
+# - Startup (vector table)
